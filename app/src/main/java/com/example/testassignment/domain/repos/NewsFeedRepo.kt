@@ -7,9 +7,9 @@ import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.testassignment.BuildConfig
 import com.example.testassignment.domain.model.News
 import com.example.testassignment.domain.model.NewsItem
-import com.example.testassignment.utils.URL
 import com.google.gson.Gson
 
 class NewsFeedRepo private constructor(private val requestQueue: RequestQueue) {
@@ -31,7 +31,7 @@ class NewsFeedRepo private constructor(private val requestQueue: RequestQueue) {
     ) {
         val newsArticlesRequest = object : StringRequest(
             Request.Method.GET,
-            Uri.parse(URL).toString(),
+            Uri.parse(BuildConfig.NEWS_URL).toString(),
             {
                 val news: News = Gson().fromJson(it, News::class.java)
                 onSuccess(news.articles)

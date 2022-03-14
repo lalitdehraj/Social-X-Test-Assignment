@@ -14,4 +14,4 @@ fun loadImageInImageView(imageView: ImageView, url : String?) {
         .error(R.drawable.splash_logo).into(imageView)
 }
 
-const val URL = "https://newsapi.org/v2/everything?q=keyword"
+//const val URL = "https://newsapi.org/v2/everything?q=keyword"

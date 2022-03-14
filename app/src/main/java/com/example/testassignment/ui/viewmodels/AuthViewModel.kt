@@ -21,7 +21,6 @@ class AuthViewModel(
 
     fun logout() = firebaseAuthRepo.logout()
 
-
     class Factory(
         private val firebaseAuthRepo: FirebaseAuthRepo
     ) : ViewModelProvider.Factory{

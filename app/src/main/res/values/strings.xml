@@ -20,4 +20,6 @@
     <string name="fetching_articles">Fetching Articles</string>
     <string name="nothing_here_right_now">Nothing Here Right Now</string>
     <string name="latest_news">Latest News</string>
+    <string name="Client_id">580185392190-kj7t4du8jg75pjv55369neubvkn9gdbr.apps.googleusercontent.com</string>
+
 </resources>
